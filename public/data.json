@@ -1,0 +1,122 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "Winter Coat Fitting for Dogs",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 25,
+    "rating": 4.2,
+    "slotsAvailable": 4,
+    "description": "Custom coat fitting designed to match your dog’s exact size and shape, ensuring both comfort and warmth. Our winter outfits are crafted from breathable, insulated fabrics that prevent chill without restricting movement. Perfect for small, medium, and large breeds who love outdoor walks even in cold weather.",
+    "image": "https://i.ibb.co.com/hJjDPF5d/Poodle-puppy-wearing-a-jacket-in-winter.png",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Winter Grooming & Paw Treatment",
+    "providerName": "CozyPets Grooming",
+    "providerEmail": "hello@cozypets.com",
+    "price": 30,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "A specialized grooming service using hydrating shampoos and paw-balms to protect against dry skin and cracked pads during cold months. Includes trimming, conditioning, and a gentle blow-dry. Your pet will leave looking clean, smelling fresh, and feeling cozy all winter long.",
+    "image": "https://i.ibb.co.com/93btJv5T/paw-care.jpg",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Thermal Blanket Customization",
+    "providerName": "FurHaven Supplies",
+    "providerEmail": "support@furhaven.com",
+    "price": 40,
+    "rating": 4.7,
+    "slotsAvailable": 5,
+    "description": "Personalized thermal blankets designed to maintain warmth during chilly nights. Each blanket is crafted with pet-safe fleece and a moisture-wicking layer that keeps fur dry. Choose from multiple sizes, colors, and embroidered name options to give your pet a cozy resting space.",
+    "image": "https://i.ibb.co.com/pv3cZXnc/e293ef34de7f2b99ff390eb70f2bd243.jpg",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Heated Bed Installation",
+    "providerName": "WarmTail Comforts",
+    "providerEmail": "care@warmtail.com",
+    "price": 75,
+    "rating": 4.9,
+    "slotsAvailable": 2,
+    "description": "Our heated pet bed installation ensures a warm and restful sleep for your furry friend. The bed features adjustable temperature settings, safe electric heating elements, and washable covers. Ideal for senior pets or breeds sensitive to the cold. Comfort and safety guaranteed.",
+    "image": "https://i.ibb.co.com/dXRDLVZ/PWB-02-1200x1200.png",
+    "category": "Comfort"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Winter Wellness Checkup",
+    "providerName": "VetCare Hub",
+    "providerEmail": "clinic@vetcarehub.com",
+    "price": 60,
+    "rating": 5.0,
+    "slotsAvailable": 6,
+    "description": "A complete veterinary checkup focusing on winter-related issues such as dry skin, joint stiffness, and temperature sensitivity. Includes basic bloodwork, ear and coat inspection, and nutritional advice for maintaining energy during colder months. Keep your pet’s health at its best this season.",
+    "image": "https://i.ibb.co.com/p9mDjDc/b400ccbd-5d9f-4fe7-8fc8-3ff2554631e4.jpg",
+    "category": "Health"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Hydrating Skin & Coat Therapy",
+    "providerName": "PurePaws Spa",
+    "providerEmail": "spa@purepaws.com",
+    "price": 45,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "A deep moisturizing spa session that revitalizes your pet’s coat and nourishes dry winter skin. Using all-natural ingredients like coconut oil and oatmeal, this treatment restores shine and elasticity while soothing irritation. Great for dogs and cats prone to winter dryness.",
+    "image": "https://i.ibb.co.com/rR9cvhsF/corgi-dog-getting-a-bath-1838561146.jpg",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 7,
+    "serviceName": "Pet Nutrition Consultation (Winter Diet)",
+    "providerName": "HealthyPaw Nutritionists",
+    "providerEmail": "nutrition@healthypaw.com",
+    "price": 50,
+    "rating": 4.9,
+    "slotsAvailable": 5,
+    "description": "Expert nutrition advice tailored for cold weather. Our specialists help you adjust your pet’s diet to support energy, hydration, and immunity during winter. Includes personalized meal planning and supplements designed for optimal coat health and digestive balance.",
+    "image": "https://i.ibb.co.com/XBcY59f/maine-coon-cat-dry-food-winter-84729.png",
+    "category": "Health"
+  },
+  {
+    "serviceId": 8,
+    "serviceName": "Snow Boot Fitting & Safety Training",
+    "providerName": "SafePaws Gear",
+    "providerEmail": "team@safepaws.com",
+    "price": 35,
+    "rating": 4.6,
+    "slotsAvailable": 4,
+    "description": "Custom-fitted snow boots to protect delicate paws from frostbite, salt, and ice. Includes a short safety training session to help pets adjust to wearing boots comfortably. Durable, non-slip soles ensure steady walking even on icy paths.",
+    "image": "https://i.ibb.co.com/n85sTx5g/Border-Collie-laying-down-wearing-booties-outdoors-scaled.jpg",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 9,
+    "serviceName": "Indoor Play & Exercise Session",
+    "providerName": "PawJoy Center",
+    "providerEmail": "fun@pawjoy.com",
+    "price": 20,
+    "rating": 4.5,
+    "slotsAvailable": 8,
+    "description": "A guided indoor exercise session to keep your pets active during the cold months. Includes agility toys, obstacle games, and light training to maintain fitness. Ideal for pets who spend more time indoors in winter, preventing boredom and weight gain.",
+    "image": "https://i.ibb.co.com/20SD3vFH/how-to-exercise-a-dog-without-walking-creative-indoor-activities-for-happy-pups.png",
+    "category": "Comfort"
+  },
+  {
+    "serviceId": 10,
+    "serviceName": "Pet Photography in Winter Theme",
+    "providerName": "FurLens Studio",
+    "providerEmail": "studio@furlens.com",
+    "price": 80,
+    "rating": 4.9,
+    "slotsAvailable": 2,
+    "description": "Capture your pet’s cozy winter moments with a professional photography session. Featuring warm lighting, snow-themed props, and creative portrait poses. Perfect for holiday cards or cherished memories. Every session includes digital copies and optional printed albums.",
+    "image": "https://i.ibb.co.com/ZRjjmsYm/cat-snowflake-nose-close-up-pet-wintery-setting-ideal-holiday-marketing-themed-content-winter-season.png",
+    "category": "Comfort"
+  }
+]

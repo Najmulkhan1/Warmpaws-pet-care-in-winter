@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Eleanor Vance",
+    "specialty": "Small Animal Internal Medicine",
+    "image": "https://i.ibb.co.com/Ngpf6cVM/8-verthing-vh6hen-QFueg-unsplash.jpg",
+    "bio": "Dr. Vance has over 15 years of experience focusing on complex internal health issues in dogs and cats. She's passionate about diagnostic challenges.",
+    "contact": {
+      "linkedin": "https://www.linkedin.com/in/eleanorvance",
+      "email": "eleanor.vance@example.com",
+      "phone": "+1 (555) 123-4567"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Dr. Marcus Chen",
+    "specialty": "Veterinary Surgery & Orthopedics",
+    "image": "https://i.ibb.co.com/MDkWhNf2/usman-yousaf-p-Trhfmj2j-DA-unsplash.jpg",
+    "bio": "A gifted surgeon, Dr. Chen specializes in advanced orthopedic and soft tissue procedures, ensuring optimal outcomes for his patients.",
+    "contact": {
+      "linkedin": "https://www.linkedin.com/in/marcuschen",
+      "email": "marcus.chen@example.com",
+      "phone": "+1 (555) 234-5678"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Dr. Sofia Rodriguez",
+    "specialty": "Emergency & Critical Care",
+    "image": "https://i.ibb.co.com/wZs7DJsH/pic3333.jpg",
+    "bio": "Dr. Rodriguez is dedicated to providing immediate, life-saving care in critical situations, with a calm and compassionate approach.",
+    "contact": {
+      "linkedin": "https://www.linkedin.com/in/sofiarodriguez",
+      "email": "sofia.rodriguez@example.com",
+      "phone": "+1 (555) 345-6789"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Dr. David Kim",
+    "specialty": "Exotic Pet Medicine",
+    "image": "https://i.ibb.co.com/MyzBztMH/portrait-hansome-young-male-doctor-man.jpg",
+    "bio": "Dr. Kim has a unique expertise in the care of birds, reptiles, and small mammals, ensuring even the most unusual pets get top-notch treatment.",
+    "contact": {
+      "linkedin": "https://www.linkedin.com/in/davidkim",
+      "email": "david.kim@example.com",
+      "phone": "+1 (555) 456-7890"
+    }
+  }
+]

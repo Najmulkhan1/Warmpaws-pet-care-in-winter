@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@plugin "daisyui"{
+   themes: light --default;
+ }
+
+
+ .login-bg {
+   background-image: url('https://i.ibb.co.com/S73jqzYP/Cozy-Winter-Outfits-for-Cats-Dogs-Warm-Pet-Sweaters-Jackets-Coats.jpg');
+   background-size: cover;
+   background-position: center;
+ }
+
+ .register-bg {
+   background-image: url('https://i.ibb.co.com/mVGKns1S/image.jpg');
+   background-size: cover;
+    background-position: center;
+ }
