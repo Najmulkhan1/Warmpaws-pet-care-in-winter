@@ -7,14 +7,14 @@ import { Toaster } from 'react-hot-toast'
 
 const RootLayout = () => {
   return (
-    <div className='bg-[#F5FAFF] min-h-screen flex flex-col'>
-        <Navbar></Navbar>
-        <div className='flex-1'>
-            <Outlet></Outlet>
-        </div>
-        <Footer></Footer>
+    <div className='bg-base-200 min-h-screen flex flex-col'>
+      <Navbar></Navbar>
+      <div className='flex-1'>
+        <Outlet></Outlet>
+      </div>
+      <Footer></Footer>
 
-         <Toaster />
+      <Toaster />
     </div>
   )
 }

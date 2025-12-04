@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { AuthContext } from '../provider/AuthProvider'; 
 import toast from 'react-hot-toast';
+import { AuthContext } from '../provider/AuthContext';
 
 
 const formatDate = (isoString) => {

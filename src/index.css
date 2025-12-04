@@ -3,6 +3,13 @@
    themes: light --default;
  }
 
+ @plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #234C6A;
+  --color-secondary: #456882;
+}
+
 
  .login-bg {
    background-image: url('https://i.ibb.co.com/S73jqzYP/Cozy-Winter-Outfits-for-Cats-Dogs-Warm-Pet-Sweaters-Jackets-Coats.jpg');

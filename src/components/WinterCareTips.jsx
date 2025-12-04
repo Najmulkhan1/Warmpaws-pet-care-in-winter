@@ -81,17 +81,17 @@ const WinterCareTips = () => {
         </p>
       </header>
 
-   
+
       <div data-aos="fade-up">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {winterTipsData.map((tip) => (
             <div
               key={tip.id}
-              className="bg-white rounded-xl shadow-lg p-6 flex flex-col transform transition duration-300 hover:shadow-2xl hover:-translate-y-1 border-t-4 border-teal-500"
+              className="bg-white rounded-xl shadow-lg p-6 flex flex-col transform transition duration-300 hover:shadow-2xl hover:-translate-y-1 border-t-4 border-secondary"
             >
               {/* Icon & Category Badge */}
               <div className="flex justify-between items-start mb-4">
-                <tip.icon className="text-4xl text-teal-500 bg-teal-50 p-2 rounded-full" />
+                <tip.icon className="text-4xl text-secondary bg-secondary/10 p-2 rounded-full" />
                 <span className="text-xs font-semibold uppercase tracking-wider text-gray-700 bg-gray-200 px-3 py-1 rounded-full">
                   {tip.category}
                 </span>

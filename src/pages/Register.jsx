@@ -1,11 +1,11 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 
 import { Link, useNavigate } from "react-router";
-import { AuthContext } from "../provider/AuthProvider";
 import { use } from "react";
 import { MdAccessTime, MdPets, MdVerifiedUser } from "react-icons/md";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import toast from "react-hot-toast";
+import { AuthContext } from "../provider/AuthContext";
 
 const Register = () => {
   const { createUser, signInWithGoogle, userProfileUpdate } = use(AuthContext);

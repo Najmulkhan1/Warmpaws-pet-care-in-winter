@@ -1,8 +1,8 @@
 import React, { use, useRef } from 'react'
 import { Link } from 'react-router'
-import { AuthContext } from '../provider/AuthProvider';
 import toast from 'react-hot-toast';
 import { to } from 'react-spring';
+import { AuthContext } from '../provider/AuthContext';
 
 const ForgotPassword = () => {
 

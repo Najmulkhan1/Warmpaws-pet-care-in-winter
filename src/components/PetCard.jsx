@@ -1,64 +1,84 @@
 import React from "react";
-import { MdOutlineStarHalf, MdStar, MdOutlineChevronRight } from "react-icons/md";
+// Using MdStar and MdOutlineStarHalf for ratings
+import { MdOutlineStarHalf, MdStar } from "react-icons/md";
 import { Link } from "react-router";
-import { FaUserCircle,  FaCheckCircle } from "react-icons/fa"; 
+// Using FaUserCircle for provider, FaPaw for the action button
+import { FaUserCircle, FaPaw } from "react-icons/fa";
+
 
 const PetCard = ({ service }) => {
-  
+
+
+  // Function to render rating stars (can be refined further)
+  const renderRating = (rating) => {
+    // Simplified: show a full star for 4.0+, and a half star for less, keeping the rating number.
+    if (rating >= 4.0) {
+      return <MdStar className="text-xl text-yellow-500 mr-1" />;
+    } else if (rating > 0) {
+      return <MdOutlineStarHalf className="text-xl text-yellow-500 mr-1" />;
+    }
+    return null; // Don't show an icon if rating is 0 or undefined
+  };
 
   return (
-    <div className="p-4"> 
-      <div className="max-w-xs mx-auto bg-white rounded-lg shadow-xl hover:shadow-2xl transition duration-300 ease-in-out border-t-4 border-teal-500 overflow-hidden">
-        
-       
-        <figure className="h-40 relative overflow-hidden">
+    <div className="">
+      {/* Card Container: More prominent shadow, rounded corners, subtle background color */}
+      <div className="max-w-xs mx-auto bg-white rounded-xl shadow-2xl hover:shadow-3xl transition duration-500 border-2 border-gray-100 overflow-hidden">
+
+        {/* Image Section with Price Overlay */}
+        <figure className="h-48 relative overflow-hidden">
           <img
-            className="h-full w-full object-cover transform hover:scale-105 transition duration-500 ease-in-out"
+            className="h-full w-full object-cover transform hover:scale-105 transition duration-700 ease-in-out"
             src={service.image}
             alt={service.serviceName}
           />
-        </figure>
-        
-      
-        <div className="p-5">
-          
-         
-          <h2 className="text-xl font-bold text-gray-900 mb-2 truncate">
-            {service.serviceName}
-          </h2>
-          
-          
-          <div className="flex items-center text-sm text-gray-500 mb-3 border-b pb-3 border-gray-100">
-             <FaUserCircle className="mr-1 text-teal-500" />
-             <span className="font-medium mr-3 truncate">{service.providerName || "Service Provider"}</span>
-             <span className="text-xs font-semibold px-2 py-0.5 bg-gray-100 text-gray-600 rounded-full">
-                {service.category}
-             </span>
-          </div>
 
-         
-          <div className="flex justify-between items-center mb-4">
-            
-            
-            <div className="text-3xl font-extrabold text-teal-600 flex items-start">
-              <span className="text-xl font-semibold mt-0.5">$</span>{service.price}
-            </div>
-            
-            
-            <div className="flex items-center text-base font-bold text-gray-700">
-              {service.rating >= 4.5 ? <MdStar className="text-xl text-yellow-500 mr-1" /> : <MdOutlineStarHalf className="text-xl text-yellow-500 mr-1" />}
+          {/* Price Tag Overlay (Top Right) */}
+          <div className="absolute top-3 right-3 bg-secondary text-white text-lg font-bold px-3 py-1 rounded-full shadow-lg">
+            ${service.price}
+          </div>
+        </figure>
+
+
+        <div className="p-5">
+
+          {/* Service Name and Rating */}
+          <div className="flex justify-between items-center mb-2">
+            <h2 className="text-xl font-extrabold text-gray-900 truncate pr-2">
+              {service.serviceName}
+            </h2>
+            {/* Rating Display */}
+            <div className="flex items-center text-lg font-bold text-gray-700 flex-shrink-0">
+              {renderRating(service.rating)}
               <span>{service.rating}</span>
             </div>
           </div>
 
-         
-          <Link 
-            to={`/service-details/${service.serviceId}`} 
-            className="group w-full flex items-center justify-center py-2.5 px-4 bg-teal-600 text-white font-semibold rounded-md shadow-lg hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 transition duration-200 ease-in-out"
+          {/* Provider and Category */}
+          <div className="flex flex-col text-sm text-gray-600 mb-5 pt-1 border-t border-gray-100">
+
+            {/* Provider */}
+            <div className="flex items-center mt-2">
+              <FaUserCircle className="mr-2 text-secondary text-base" />
+              <span className="font-semibold text-gray-700 truncate">{service.providerName || "Service Provider"}</span>
+            </div>
+
+            {/* Category */}
+            <div className="mt-1 ml-6">
+              <span className="text-xs font-medium px-2 py-0.5 bg-secondary/10 text-secondary rounded-lg">
+                {service.category}
+              </span>
+            </div>
+          </div>
+
+
+          {/* View Details Button */}
+          <Link
+            to={`/service-details/${service.serviceId}`}
+            className="group w-full flex items-center justify-center py-3 px-4 bg-primary text-white font-bold rounded-lg shadow-md shadow-primary/30 hover:bg-primary/90 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-primary/50 transition duration-300 ease-in-out"
           >
-            <FaCheckCircle className="mr-2 text-sm" />
-            <span className="uppercase tracking-wide text-sm">View Details</span>
-            <MdOutlineChevronRight className="text-xl transition-transform duration-300 group-hover:translate-x-1" />
+            <FaPaw className="mr-2 text-lg transform rotate-45 transition duration-300 group-hover:rotate-0" />
+            <span className="uppercase tracking-widest text-sm">Book Service</span>
           </Link>
         </div>
       </div>

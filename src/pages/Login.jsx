@@ -1,9 +1,9 @@
 import React, { use,  useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
-import { AuthContext } from "../provider/AuthProvider";
 import { MdAccessTime, MdPets, MdVerifiedUser } from "react-icons/md";
 import toast from "react-hot-toast";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+import { AuthContext } from "../provider/AuthContext";
 
 const Login = () => {
   const { signInUser, signInWithGoogle } = use(AuthContext);

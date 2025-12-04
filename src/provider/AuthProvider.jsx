@@ -8,10 +8,10 @@ import {
   signOut,
   updateProfile,
 } from "firebase/auth";
-import React, { createContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { auth } from "../firebase/firebase.init";
+import { AuthContext } from "./AuthContext";
 
-export const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);

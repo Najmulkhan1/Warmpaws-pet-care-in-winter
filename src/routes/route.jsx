@@ -11,6 +11,9 @@ import PrivateRoute from "../provider/PrivateRoute";
 import Error from "../pages/Error";
 import Loading from "../pages/Loading";
 import ForgotPassword from "../pages/ForgotPassword";
+import About from "../pages/About";
+import Contact from "../pages/Contact";
+
 
 const router = createBrowserRouter ([
     {
@@ -48,6 +51,14 @@ const router = createBrowserRouter ([
             {
                 path: "/forgot-password",
                 Component: ForgotPassword
+            },
+            {
+                path: "/about",
+                Component: About
+            },
+            {
+                path: "/contact",
+                Component: Contact
             }
         ]
     },
@@ -55,9 +66,8 @@ const router = createBrowserRouter ([
     {
         path: "/service-details/:serviceId",
         element: (
-            <PrivateRoute>
                 <ServiceDetails />
-            </PrivateRoute>
+            
         ),
         loader: () => fetch('/data.json'),
          hydrateFallbackElement: <Loading></Loading>,

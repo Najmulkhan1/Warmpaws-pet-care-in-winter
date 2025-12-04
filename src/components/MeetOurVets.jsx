@@ -20,9 +20,9 @@ const MeetOurVets = () => {
   }, []);
 
   return (
-    <section className="py-16 md:py-20 bg-gradient-to-br from-indigo-50 to-purple-50">
+    <section className="py-16 md:py-20 bg-gradient-to-br from-base-200 to-base-100">
       <header className="text-center max-w-3xl mx-auto mb-16 px-4">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-indigo-800 mb-4">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-primary mb-4">
           Meet Our Expert Vets 👩‍⚕️👨‍⚕️
         </h2>
         <p className="text-lg text-gray-700">
@@ -38,10 +38,10 @@ const MeetOurVets = () => {
           {vets.map((vet) => (
             <div
               key={vet.id}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center text-center p-6 transform transition duration-300 hover:scale-[1.03] hover:shadow-2xl hover:border-b-4 hover:border-indigo-400 h-full"
+              className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center text-center p-6 transform transition duration-300 hover:scale-[1.03] hover:shadow-2xl hover:border-b-4 hover:border-secondary h-full"
             >
               {/* Vet Image */}
-              <div className="w-32 h-32 rounded-full overflow-hidden mb-5 border-4 border-indigo-200 shrink-0">
+              <div className="w-32 h-32 rounded-full overflow-hidden mb-5 border-4 border-primary/20 shrink-0">
                 <img
                   src={vet.image}
                   alt={`Dr. ${vet.name}`}
@@ -55,7 +55,7 @@ const MeetOurVets = () => {
                   <h3 className="text-2xl font-bold text-gray-800 mb-2">
                     {vet.name}
                   </h3>
-                  <p className="text-indigo-600 font-semibold mb-4 text-lg">
+                  <p className="text-secondary font-semibold mb-4 text-lg">
                     {vet.specialty}
                   </p>
                   <p className="text-gray-600 text-sm mb-6 line-clamp-3">
@@ -70,7 +70,7 @@ const MeetOurVets = () => {
                       href={vet.contact.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-indigo-500 hover:text-indigo-700 transition duration-200 text-2xl"
+                      className="text-primary hover:text-secondary transition duration-200 text-2xl"
                     >
                       <FaLinkedin />
                     </a>
@@ -78,7 +78,7 @@ const MeetOurVets = () => {
                   {vet.contact.email && (
                     <a
                       href={`mailto:${vet.contact.email}`}
-                      className="text-indigo-500 hover:text-indigo-700 transition duration-200 text-2xl"
+                      className="text-primary hover:text-secondary transition duration-200 text-2xl"
                     >
                       <FaEnvelope />
                     </a>
@@ -86,7 +86,7 @@ const MeetOurVets = () => {
                   {vet.contact.phone && (
                     <a
                       href={`tel:${vet.contact.phone}`}
-                      className="text-indigo-500 hover:text-indigo-700 transition duration-200 text-2xl"
+                      className="text-primary hover:text-secondary transition duration-200 text-2xl"
                     >
                       <FaPhone />
                     </a>
